@@ -1,0 +1,11 @@
+/* Tailwind compiles the CSS from the input.css file */
+/* And then creates it for us inside the /build/ directory where we tell it to */
+/* It pull in everything that Tailwind defines and then we can also define our own css classes underneath */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* we can create our own custom classes */
+.radial-blue {
+  background: radial-gradient(lightyellow, skyblue);
+}
