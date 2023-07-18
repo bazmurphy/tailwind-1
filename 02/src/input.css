@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* add our own custom class */
+/* define a custom class that we can call with a media query */
+@layer utilities {
+  .section-min-height {
+    /* we have to factor in the header which is lineheight 36px + padding top/bot 32px is 68px */
+    min-height: calc(100vh - 68px);
+  }
+}
