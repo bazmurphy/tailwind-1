@@ -915,6 +915,30 @@ video {
   transition-duration: 500ms;
 }
 
+.toggle-button {
+  /* this is a child selector eg. button > div */
+}
+
+.toggle-button>div::after {
+  --tw-translate-y: 0px;
+  --tw-rotate: -45deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.toggle-button>div::before {
+  --tw-translate-y: 0px;
+  --tw-rotate: 45deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.toggle-button>div {
+  background-color: transparent;
+}
+
+.toggle-button {
+  /* [&>div]:rotate-[720deg] */
+}
+
 /* add our own custom class */
 
 /* define a custom class that we can call with a media query */

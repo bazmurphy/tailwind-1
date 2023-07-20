@@ -9,4 +9,10 @@
     /* we have to factor in the header which is lineheight 36px + padding top/bot 32px is 68px */
     min-height: calc(100vh - 68px);
   }
+
+  .toggle-button {
+    /* this is a child selector eg. button > div */
+    @apply [&>div::after]:translate-y-0 [&>div::after]:-rotate-45 [&>div::before]:translate-y-0 [&>div::before]:rotate-45 [&>div]:bg-transparent;
+    /* [&>div]:rotate-[720deg] */
+  }
 }
