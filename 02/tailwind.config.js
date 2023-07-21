@@ -9,7 +9,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        papyawhip: {
+        // we can add custom font colors text-papayawhip
+        papayawhip: {
           light: "#fef4e4",
           DEFAULT: "#ffefd5",
           dark: "#fee5bc",
